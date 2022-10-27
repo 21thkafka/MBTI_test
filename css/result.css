@@ -18,6 +18,19 @@ body{
     font-family: "NEXON Lv1 Gothic OTF";
 }
 
+button {
+    font-family: "NEXON Lv1 Gothic OTF";
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
 #main_contents{
     display: flex;
     justify-content: center;
@@ -106,7 +119,7 @@ body{
     margin-bottom: 50px;
 }
 
-.lecture .title {
+.lectures .title {
     text-align: center;
     width: 400px;
     font-size: 30px;
@@ -115,6 +128,73 @@ body{
     position: relative;
 }
 
-.lectures .title:before, .lectures .title::after {
-    content : 'a';
+.lectures .title:before, .lectures .title:after {
+    content : '';
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: #EA7E7C;
+    position: absolute;
+}
+
+.lectures .title:before {
+    left: 0;
+    top: 50%;
+
+}
+
+.lectures .title:after {
+    right: 0;
+    top: 50%;
+}
+
+.lectures p {
+    padding: 50px 0;
+    line-height: 1.5;
+}
+
+.lectures ul {
+    width: 400px;
+}
+
+.lectures li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.lectures a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+
+.lectures a:hover img {
+    transform: scale(1.05);
+}
+
+.lectures a:hover button {
+    text-decoration: underline;
+}
+
+.lectures li img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    transition: transform .5s;
+}
+
+.lectures li h3 {
+    font-family: "GmarketSansMedium";
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 10px 20px;
+}
+
+.lectures li button{
+    background-color: #7F47DD;
+    color: #fff;
 }
